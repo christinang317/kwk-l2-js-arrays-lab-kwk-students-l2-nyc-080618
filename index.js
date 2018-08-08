@@ -18,25 +18,25 @@ function destructivelyRemoveFirstDriver(name) {
 }
 
 function appendDriver(name) {
-  var newDrivers = drivers.slice(0); 
+  var newDrivers = drivers.slice(); 
   newDrivers.push(name); 
   return newDrivers; 
 }
 
 function prependDriver(name) {
-  var newDrivers = drivers.slice(0); 
+  var newDrivers = drivers.slice(); 
   newDrivers.unshift(name); 
   return newDrivers; 
 }
 
 function removeLastDriver() {
-  var newDrivers = drivers.slice(0); 
+  var newDrivers = drivers.slice(); 
   newDrivers.pop(); 
   return newDrivers; 
 }
 
 function removeFirstDriver() {
-  var newDrivers = drivers.slice(0); 
+  var newDrivers = drivers.slice(); 
   newDrivers.shift(); 
   return newDrivers; 
 }
